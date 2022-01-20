@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+Route::get('/hello', function (\Illuminate\Support\Facades\Request $request) {
+    return view('hello');
+})->name('hello');
 
-Route::group(['middleware' => 'keycloak-web'], function () {
+Route::group(['middleware' => 'keycloak'], function () {
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 });
 

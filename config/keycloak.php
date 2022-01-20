@@ -47,7 +47,7 @@ return [
     /**
      * Page to redirect after callback if there's no "intent"
      *
-     * @see App\Controllers\AuthController::callback()
+     * @see App\Http\Controllers\AuthController::callback()
      */
     'redirect_url' => '/',
 
@@ -58,13 +58,12 @@ return [
      *
      * The routes will receive the name "keycloak.{route}" and login/callback are required.
      * So, if you make it false, you shoul register a named 'keycloak.login' route and extend
-     * the App\Controllers\AuthController controller.
+     * the App\Http\Controllers\AuthController controller.
      */
     'routes' => [
         'login' => 'connexion',
         'logout' => 'deconnexion',
-        'register' => 'inscription',
-        'callback' => 'callback',
+        //'register' => 'inscription'
     ],
 
     /**

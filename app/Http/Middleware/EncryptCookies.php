@@ -19,6 +19,6 @@ class EncryptCookies extends Middleware
          * If you have a "session.cookie" option or don't care about changing the app name
          * (in another environment, for example), you can only add it to "$except" array on top
          */
-        $this->disableFor(config('session.cookie'));
+        //$this->disableFor(config('session.cookie'));
     }
 }

@@ -10,13 +10,12 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
-use App\Auth\Guard\KeycloakWebGuard;
-use App\Auth\KeycloakWebUserProvider;
+use App\Auth\Guard\KeycloakGuard;
+use App\Auth\WebUserProvider;
 use App\Http\Middleware\Authenticate;
-use App\Models\KeycloakUser;
 use App\Services\KeycloakService;
 
-class KeycloakWebGuardServiceProvider extends ServiceProvider
+class KeycloakServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.
@@ -27,7 +26,7 @@ class KeycloakWebGuardServiceProvider extends ServiceProvider
     {
         // User Provider
         Auth::provider('keycloak-users', function($app, array $config) {
-            return new KeycloakWebUserProvider($config['model']);
+            return new WebUserProvider($config['model']);
         });
 
         // Gate
@@ -46,7 +45,7 @@ class KeycloakWebGuardServiceProvider extends ServiceProvider
         // Keycloak Web Guard
         Auth::extend('keycloak', function ($app, $name, array $config) {
             $provider = Auth::createUserProvider($config['provider']);
-            return new KeycloakWebGuard($provider, $app->request);
+            return new KeycloakGuard($provider, $app->request);
         });
 
         // Facades

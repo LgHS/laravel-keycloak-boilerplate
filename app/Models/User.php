@@ -2,10 +2,10 @@
 
 namespace App\Models;
 
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Contracts\Auth\Authenticatable;
 
-class KeycloakUser implements Authenticatable
+class User implements Authenticatable
 {
     /**
      * Attributes we retrieve from Profile
@@ -84,7 +84,7 @@ class KeycloakUser implements Authenticatable
     /**
      * Check user has roles
      *
-     * @see KeycloakWebGuard::hasRole()
+     * @see KeycloakGuard::hasRole()
      *
      * @param  string|array  $roles
      * @param  string  $resource

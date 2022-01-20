@@ -4,9 +4,9 @@ namespace App\Auth;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\UserProvider;
-use App\Models\KeycloakUser;
+use App\Models\User;
 
-class KeycloakWebUserProvider implements UserProvider
+class WebUserProvider implements UserProvider
 {
     /**
      * The user model.

@@ -4,7 +4,7 @@ namespace App\Auth;
 
 use Exception;
 
-class KeycloakAccessToken
+class AccessToken
 {
     /**
      * @var string

@@ -6,15 +6,15 @@ use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
-use App\Auth\KeycloakAccessToken;
+use App\Auth\AccessToken;
 use App\Exceptions\CallbackException;
-use App\Models\KeycloakUser;
+use App\Models\User;
 use App\Facades\Keycloak;
 use Illuminate\Contracts\Auth\UserProvider;
-class KeycloakWebGuard implements Guard
+class KeycloakGuard implements Guard
 {
     /**
-     * @var null|Authenticatable|KeycloakUser
+     * @var null|Authenticatable|User
      */
     protected $user;
 
@@ -165,7 +165,7 @@ class KeycloakWebGuard implements Guard
             return false;
         }
 
-        $token = new KeycloakAccessToken($token);
+        $token = new AccessToken($token);
         $token = $token->parseAccessToken();
 
         $resourceRoles = $token['resource_access'] ?? [];

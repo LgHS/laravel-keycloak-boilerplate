@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf14086919a839fe740e00554e4baff6",
+    "content-hash": "03a5d9a27172443b009132d985f3ec9e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1718,6 +1718,66 @@
                 }
             ],
             "time": "2021-11-21T11:48:40+00:00"
+        },
+        {
+            "name": "lghs/laravel-keycloak-guard",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LgHS/laravel-keycloak-guard.git",
+                "reference": "6359349626ba1785ca4b65c08220b9d85b0279be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LgHS/laravel-keycloak-guard/zipball/6359349626ba1785ca4b65c08220b9d85b0279be",
+                "reference": "6359349626ba1785ca4b65c08220b9d85b0279be",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.5|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Lghs\\KeycloakGuard\\KeycloakServiceProvider"
+                    ],
+                    "aliases": {
+                        "Keycloak": "Lghs\\KeycloakGuard\\Facades\\Keycloak"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lghs\\KeycloakGuard\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Duman Haydar",
+                    "email": "haydar@duman.io"
+                },
+                {
+                    "name": "Mário Valney",
+                    "email": "mariovalney@gmail.com"
+                }
+            ],
+            "description": "Simple Keycloak Guard to Laravel Web Routes",
+            "homepage": "https://github.com/Lghs/laravel-keycloak-guard",
+            "keywords": [
+                "Authentication",
+                "jwt",
+                "keycloak",
+                "laravel"
+            ],
+            "support": {
+                "source": "https://github.com/LgHS/laravel-keycloak-guard/tree/v3.0.0"
+            },
+            "time": "2022-01-21T09:05:55+00:00"
         },
         {
             "name": "monolog/monolog",

@@ -62,7 +62,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'keycloak-users',
-            'model' => App\Models\User::class,
+            'model' => Lghs\KeycloakGuard\Models\User::class,
         ],
 
         // 'users' => [

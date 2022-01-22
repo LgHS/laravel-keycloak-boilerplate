@@ -1721,16 +1721,16 @@
         },
         {
             "name": "lghs/laravel-keycloak-guard",
-            "version": "v3.0.0",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LgHS/laravel-keycloak-guard.git",
-                "reference": "6359349626ba1785ca4b65c08220b9d85b0279be"
+                "reference": "2ec151528863134b8a1e32c22cc6ad88dcfb9da9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LgHS/laravel-keycloak-guard/zipball/6359349626ba1785ca4b65c08220b9d85b0279be",
-                "reference": "6359349626ba1785ca4b65c08220b9d85b0279be",
+                "url": "https://api.github.com/repos/LgHS/laravel-keycloak-guard/zipball/2ec151528863134b8a1e32c22cc6ad88dcfb9da9",
+                "reference": "2ec151528863134b8a1e32c22cc6ad88dcfb9da9",
                 "shasum": ""
             },
             "require": {
@@ -1775,9 +1775,9 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/LgHS/laravel-keycloak-guard/tree/v3.0.0"
+                "source": "https://github.com/LgHS/laravel-keycloak-guard/tree/v3.2.0"
             },
-            "time": "2022-01-21T09:05:55+00:00"
+            "time": "2022-01-22T12:01:29+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -6891,16 +6891,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.11",
+            "version": "9.5.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "2406855036db1102126125537adb1406f7242fdd"
+                "reference": "93d4bf4c37aec6384bb9e5d390d9049a463a7256"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2406855036db1102126125537adb1406f7242fdd",
-                "reference": "2406855036db1102126125537adb1406f7242fdd",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/93d4bf4c37aec6384bb9e5d390d9049a463a7256",
+                "reference": "93d4bf4c37aec6384bb9e5d390d9049a463a7256",
                 "shasum": ""
             },
             "require": {
@@ -6978,7 +6978,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.11"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.12"
             },
             "funding": [
                 {
@@ -6990,7 +6990,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-25T07:07:57+00:00"
+            "time": "2022-01-21T05:54:47+00:00"
         },
         {
             "name": "sebastian/cli-parser",

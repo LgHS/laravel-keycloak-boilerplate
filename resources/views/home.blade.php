@@ -13,7 +13,10 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
+                    <h4>Realm Roles</h4>
+                    <pre>{{ var_dump(Auth::user()->getRealmRoles()) }}</pre>
+                    <h4>Resource Roles</h4>
+                    <pre>{{ var_dump(Auth::user()->getResourceRoles()) }}</pre>
                     {{ __('Vous êtes connecté!') }}
                 </div>
             </div>
